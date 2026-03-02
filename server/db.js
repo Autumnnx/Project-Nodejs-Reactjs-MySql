@@ -1,6 +1,10 @@
+//Conexión a mysql
 const mysql = require('mysql2');
 
+//Se accede a las credenciales creadas en .env
 require('dotenv').config();
+
+//Método para conectarme a la base de datos
 
 const connection = mysql.createConnection({
     host: process.env.DB_HOST,
@@ -8,6 +12,8 @@ const connection = mysql.createConnection({
     password: process.env.DB_PASSWORD,
     database: process.env.DB_NAME
 });
+
+//Método para saber si hay un error
 
 connection.connect((err) => {
     if(err){
@@ -18,5 +24,6 @@ connection.connect((err) => {
 
 });
 
+//Exporta la conexión realizada
 module.exports = connection;
 

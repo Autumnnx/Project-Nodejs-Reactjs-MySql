@@ -76,7 +76,7 @@ app.put('/empleados/:id', (req, res) => {
 
 // Ruta 4: DELETE: eliminar empleado
 
-app.put('/empleados/:id', (req, res) => {
+app.delete('/empleados/:id', (req, res) => {
 
     const{id} = req.params;
     
