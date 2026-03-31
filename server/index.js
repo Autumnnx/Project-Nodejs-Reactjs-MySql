@@ -5,7 +5,7 @@ const db = require('./db');
 const app = express();
 
 app.use(cors());
-app.use(express.json);
+app.use(express.json());
 
 
 // Ruta 1: GET: obtener empleado
