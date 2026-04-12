@@ -2,6 +2,7 @@
 
 # dependencies
 client/node_modules
+
 server/node_modules
 /.pnp
 .pnp.js
@@ -14,7 +15,9 @@ server/node_modules
 
 # misc
 .DS_Store
+
 server/.env
+
 .env.local
 .env.development.local
 .env.test.local
